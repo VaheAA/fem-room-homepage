@@ -1,15 +1,4 @@
 
-  Home
-  Shop
-  About
-  Contact
-
-  
-
-  
-
-  Shop now
-
   We are available all across the globe
 
   With stores all over the world, it's easy for you to find furniture for your home or place of business. 

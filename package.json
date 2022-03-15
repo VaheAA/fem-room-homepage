@@ -37,5 +37,8 @@
     "webp-converter": "^2.2.3",
     "webpack": "^5.67.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
   }
 }

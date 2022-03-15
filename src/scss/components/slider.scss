@@ -6,6 +6,8 @@
 
   &__right {
     flex: 3;
+    display: flex;
+    overflow: hidden;
   }
   &__img {
     display: block;
