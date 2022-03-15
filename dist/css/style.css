@@ -183,9 +183,8 @@ a:active {
   display: flex;
 }
 .slider__right {
-  flex: 3;
-  display: flex;
-  overflow: hidden;
+  flex: 2;
+  position: relative;
 }
 .slider__img {
   display: block;
@@ -193,8 +192,9 @@ a:active {
   width: 100%;
 }
 .slider__left {
-  flex: 2;
-  position: relative;
+  flex: 3;
+  display: flex;
+  overflow: hidden;
 }
 .slider__info {
   padding: 7.5rem 6.25rem;
