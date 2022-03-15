@@ -45,3 +45,125 @@ a,
 a:active {
   text-decoration: none;
 }
+
+.slider {
+  display: flex;
+}
+.slider__right {
+  flex: 3;
+}
+.slider__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.slider__left {
+  flex: 2;
+  position: relative;
+}
+.slider__info {
+  padding: 7.5rem 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.slider__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #454545;
+}
+.slider__body {
+  color: #a1a1a1;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.slider__link {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  color: #454545;
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  transition: all 0.2s ease-in-out;
+}
+.slider__link:hover {
+  opacity: 0.5;
+}
+.slider__controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.slider__btn:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  padding: 4.0625rem;
+}
+.header__container {
+  max-width: 31.25rem;
+  margin-right: auto;
+  padding: 0 20px;
+}
+.header__inner {
+  display: flex;
+  align-items: baseline;
+  gap: 3.4375rem;
+}
+.header .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .brand-link {
+  color: white;
+  text-transform: lowercase;
+}
+.header .nav__list {
+  display: flex;
+  align-items: center;
+  gap: 2.1875rem;
+}
+.header .nav__link {
+  color: white;
+  font-size: 1rem;
+  text-transform: lowercase;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.625rem;
+}
+.header .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 50%;
+  height: 0.125rem;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.header .nav__link:hover::after {
+  opacity: 1;
+}

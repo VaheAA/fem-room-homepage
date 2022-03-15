@@ -5,13 +5,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Home</title>
+  <title>Room</title>
 </head>
 
   <body>
-    <header class="header"></header>
+    <header class="header">
+  <div class="header__container">
+    <div class="header__inner">
+      <span class="brand">
+        <a class="brand-link" href="/">room</a>
+      </span>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="/">home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">shop</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">about</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="slider">
+        <div class="slider__right">
+          <img
+            src="./img/desktop-image-hero-1.jpg"
+            alt=""
+            class="slider__img"
+          />
+        </div>
+        <div class="slider__left">
+          <div class="slider__info">
+            <h1 class="slider__title">Discover innovative ways to decorate</h1>
+            <p class="slider__body">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <a class="slider__link" href="#"
+              >shop now
+              <img src="./img/icon-arrow.svg" alt="" />
+            </a>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--prev">
+              <img src="./img/icon-angle-left.svg" alt="" />
+            </button>
+            <button class="slider__btn slider__btn--next">
+              <img src="./img/icon-angle-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer"></footer>
 
     <script src="js/app.min.js"></script>
