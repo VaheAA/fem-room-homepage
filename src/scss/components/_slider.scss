@@ -3,63 +3,116 @@
 
 .slider {
   display: flex;
-  height: 100%;
+  flex-direction: column;
 
-  &__right {
-    width: 40%;
-    display: flex;
-    max-height: 100%;
-  }
-  &__img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
+  @include breakpoint(medium) {
+    flex-direction: row;
     height: 100%;
   }
+
+  &__right {
+    width: 100%;
+    height: 100%;
+    @include breakpoint(medium) {
+      width: 40%;
+      display: flex;
+      max-height: 100%;
+    }
+  }
+
+  &__img {
+    @include breakpoint(medium) {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__img-desktop {
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+  &__img-mobile {
+    display: block;
+    width: 100%;
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
+
   &__left {
-    width: 60%;
-    display: flex;
-    max-height: 100%;
+    @include breakpoint(medium) {
+      width: 60%;
+      display: flex;
+      max-height: 100%;
+    }
   }
   &__info {
     display: flex;
     flex-direction: column;
-    padding: rem(100) rem(80);
+    padding: rem(50) rem(25);
     gap: rem(40);
+    max-width: 100%;
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: column;
+      padding: rem(100) rem(80);
+      gap: rem(40);
+    }
   }
   &__title {
-    font-size: rem(48);
-    font-weight: bold;
+    font-size: rem(28);
     color: $veryDarkGray;
+    font-weight: bold;
+
+    @include breakpoint(medium) {
+      font-size: rem(48);
+    }
   }
   &__body {
     color: $darkGray;
-    font-size: rem(16);
-    line-height: rem(28);
+    font-size: rem(15);
+    line-height: rem(26);
+
+    @include breakpoint(medium) {
+      font-size: rem(16);
+      line-height: rem(28);
+    }
   }
   &__link {
     display: flex;
     align-items: center;
     gap: rem(40);
-    font-size: rem(24);
+    font-size: rem(18);
     color: $veryDarkGray;
     text-transform: uppercase;
-    letter-spacing: rem(5);
-    word-spacing: rem(5);
+    letter-spacing: rem(3);
+    word-spacing: rem(3);
     transition: all 0.2s ease-in-out;
+
+    @include breakpoint(medium) {
+      font-size: rem(24);
+      letter-spacing: rem(5);
+      word-spacing: rem(5);
+    }
     &:hover {
       opacity: 0.5;
     }
   }
   &__controls {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: rem(160);
-    height: rem(80);
+    width: rem(110);
+    height: rem(55);
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint(medium) {
+      width: rem(160);
+      height: rem(80);
+    }
   }
   &__btn {
     padding: 0;
@@ -72,6 +125,24 @@
 
     &:hover {
       background-color: rgba($color: $black, $alpha: 0.75);
+    }
+  }
+
+  .desktop {
+    display: none;
+
+    @include breakpoint(medium) {
+      display: flex;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .mobile {
+    display: flex;
+    bottom: 0;
+    right: 0;
+    @include breakpoint(medium) {
+      display: none;
     }
   }
 }

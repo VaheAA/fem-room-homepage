@@ -14,6 +14,9 @@
       <header class="header">
   <div class="header__container">
     <div class="header__inner">
+      <button class="burger__btn">
+        <img src="../img/icon-hamburger.svg" alt="" />
+      </button>
       <span class="brand">
         <a class="brand-link" href="/">room</a>
       </span>
@@ -28,6 +31,14 @@
     </div>
   </div>
 </header>
+<div class="mobile__nav">
+  <ul class="nav__list">
+    <li class="nav__item"><a class="nav__link" href="/">home</a></li>
+    <li class="nav__item"><a class="nav__link" href="#">shop</a></li>
+    <li class="nav__item"><a class="nav__link" href="#">about</a></li>
+    <li class="nav__item"><a class="nav__link" href="#">contact</a></li>
+  </ul>
+</div>
 
       <main class="main">
         <div class="slider">
@@ -39,24 +50,53 @@
                     <img
                       src="./img/desktop-image-hero-1.jpg"
                       alt=""
-                      class="slider__img"
+                      class="slider__img slider__img-desktop"
+                    />
+                    <img
+                      src="./img/mobile-image-hero-1.jpg"
+                      alt=""
+                      class="slider__img slider__img-mobile"
                     />
                   </li>
                   <li class="glide__slide">
                     <img
                       src="./img/desktop-image-hero-2.jpg"
                       alt=""
-                      class="slider__img"
+                      class="slider__img slider__img-desktop"
+                    />
+                    <img
+                      src="./img/mobile-image-hero-2.jpg"
+                      alt=""
+                      class="slider__img slider__img-mobile"
                     />
                   </li>
                   <li class="glide__slide">
                     <img
                       src="./img/desktop-image-hero-3.jpg"
                       alt=""
-                      class="slider__img"
+                      class="slider__img slider__img-desktop"
+                    />
+                    <img
+                      src="./img/mobile-image-hero-3.jpg"
+                      alt=""
+                      class="slider__img slider__img-mobile"
                     />
                   </li>
                 </ul>
+              </div>
+              <div class="slider__controls mobile" data-glide-el="controls">
+                <button
+                  class="slider__btn slider__btn--prev"
+                  data-glide-dir="<"
+                >
+                  <img src="./img/icon-angle-left.svg" alt="" />
+                </button>
+                <button
+                  class="slider__btn slider__btn--next"
+                  data-glide-dir=">"
+                >
+                  <img src="./img/icon-angle-right.svg" alt="" />
+                </button>
               </div>
             </div>
           </div>
@@ -123,7 +163,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="slider__controls" data-glide-el="controls">
+              <div class="slider__controls desktop" data-glide-el="controls">
                 <button
                   class="slider__btn slider__btn--prev"
                   data-glide-dir="<"

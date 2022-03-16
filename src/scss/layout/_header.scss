@@ -6,12 +6,27 @@
   top: 0;
   left: 0;
   background: transparent;
-  padding: rem(65);
+  padding: rem(25);
   z-index: 999;
+  height: rem(110);
+
+  @include breakpoint(medium) {
+    padding: rem(65);
+    height: auto;
+  }
   &__container {
-    max-width: rem(500);
-    margin-right: auto;
-    padding: 0 20px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @include breakpoint(medium) {
+      display: block;
+      max-width: rem(500);
+      margin-right: auto;
+      padding: 0 20px;
+    }
   }
   &__inner {
     display: flex;
@@ -21,6 +36,7 @@
   .brand {
     font-size: rem(24);
     font-weight: bold;
+    text-align: center;
 
     &-link {
       color: $white;
@@ -29,6 +45,10 @@
   }
 
   .nav {
+    display: none;
+    @include breakpoint(medium) {
+      display: block;
+    }
     &__list {
       display: flex;
       align-items: center;
@@ -60,5 +80,12 @@
         opacity: 1;
       }
     }
+  }
+
+  .burger__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
   }
 }

@@ -10,8 +10,12 @@ body {
 }
 
 .container {
-  min-width: 1440px;
-  max-width: 1920px;
-  height: 100%;
-  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  @include breakpoint(medium) {
+    min-width: 1440px;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+  }
 }
