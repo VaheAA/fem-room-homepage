@@ -3,3 +3,18 @@
 
 // Optional Theme Stylesheet
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+
+.glide__track {
+  height: 100%;
+}
+
+.glide__slides {
+  height: 100%;
+}
+
+.glide__slide {
+  height: 100%;
+}
+#right {
+  position: relative;
+}

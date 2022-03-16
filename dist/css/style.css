@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+html {
+  height: 100%;
+}
+
 body {
   font-size: 0.75rem;
   font-family: "Spartan", sans-serif;
+}
+
+.container {
+  min-width: 1440px;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 html {
@@ -179,27 +190,46 @@ a:active {
   cursor: -webkit-grabbing;
 }
 
+.glide__track {
+  height: 100%;
+}
+
+.glide__slides {
+  height: 100%;
+}
+
+.glide__slide {
+  height: 100%;
+}
+
+#right {
+  position: relative;
+}
+
 .slider {
   display: flex;
+  height: 100%;
 }
 .slider__right {
   width: 40%;
   display: flex;
-  position: relative;
+  max-height: 100%;
 }
 .slider__img {
   display: block;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .slider__left {
   width: 60%;
   display: flex;
+  max-height: 100%;
 }
 .slider__info {
-  padding: 7.5rem 6.25rem;
   display: flex;
   flex-direction: column;
+  padding: 6.25rem 5rem;
   gap: 2.5rem;
 }
 .slider__title {
@@ -249,12 +279,45 @@ a:active {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  align-items: center;
+}
+.about__grid-item {
+  width: 100%;
+  height: 100%;
+}
+.about__grid-info {
+  padding: 4.375rem 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.about__grid-title {
+  font-size: 2rem;
+  color: #454545;
+}
+.about__grid-body {
+  color: #a1a1a1;
+  font-size: 0.8125rem;
+  line-height: 1.75rem;
+}
+.about__grid img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   background: transparent;
   padding: 4.0625rem;
+  z-index: 999;
 }
 .header__container {
   max-width: 31.25rem;

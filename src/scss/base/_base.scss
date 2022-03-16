@@ -1,6 +1,17 @@
 @use '../abstracts/' as *;
 
+html {
+  height: 100%;
+}
+
 body {
   font-size: rem(12);
   font-family: 'Spartan', sans-serif;
+}
+
+.container {
+  min-width: 1440px;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
 }
