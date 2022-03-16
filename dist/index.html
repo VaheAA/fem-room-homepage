@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220316124029" />
+  <link rel="stylesheet" href="css/style.min.css" />
 
   <title>Room</title>
 </head>
@@ -87,12 +87,14 @@
               <div class="slider__controls mobile" data-glide-el="controls">
                 <button
                   class="slider__btn slider__btn--prev"
+                  aria-labe="previous slide"
                   data-glide-dir="<"
                 >
                   <img src="./img/icon-angle-left.svg" alt="" />
                 </button>
                 <button
                   class="slider__btn slider__btn--next"
+                  aria-label="next slide"
                   data-glide-dir=">"
                 >
                   <img src="./img/icon-angle-right.svg" alt="" />
@@ -166,12 +168,14 @@
               <div class="slider__controls desktop" data-glide-el="controls">
                 <button
                   class="slider__btn slider__btn--prev"
+                  aria-label="precious slide"
                   data-glide-dir="<"
                 >
                   <img src="./img/icon-angle-left.svg" alt="" />
                 </button>
                 <button
                   class="slider__btn slider__btn--next"
+                  aria-label="next slide"
                   data-glide-dir=">"
                 >
                   <img src="./img/icon-angle-right.svg" alt="" />
@@ -206,6 +210,6 @@
         </div>
       </main>
     </div>
-    <script src="js/app.min.js?_v=20220316124029"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
